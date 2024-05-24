@@ -1,12 +1,94 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
 .wp-block-sp-calculator-story-points-calculator {
-	font-size: 1em;
-	background: #ffff001a;
-	padding: 1em;
+	font-size: 1.2em;
+	display: flex;
+}
+
+.wp-block-sp-calculator-story-points-calculator .panel {
+	flex: 1;
+	background: #92003B;
+	padding: 2em;
+	margin-bottom: 2em;
+	box-shadow: 3px 3px 2px #cacaca;
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	color: #fff;
+}
+.wp-block-sp-calculator-story-points-calculator .panel + .panel {
+	flex: 1;
+	background: #fff;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-top-left-radius: 0em;
+	border-bottom-left-radius: 0em;
+	p {
+		color: #6c6c6c;
+	}
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.form-group {
+	input {
+		flex: 2;
+		font-size: 1.2em;
+		padding: .5em;
+		border: none;
+		background: #92003B;
+		width: 100%;
+		box-sizing: border-box;
+		text-align: center;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+		&[type=number] {
+			-moz-appearance: textfield;
+		}
+		&:focus {
+			outline: none; /* Removes the default outline */
+			border-bottom: 1px solid #007bff;
+		}	
+	}
+}
+
+.normal-group {
+    margin-bottom: 0.7em;
+    display: flex;
+    align-items: center;
+}
+
+.normal-group div {
+	flex: 2;
+}
+
+.sps {
+	border-radius: 0.5em;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: .5em;
+	color: #fff;
+	background-color: #FF7BE5;
+	font-size: 1.2em;
+}
+
+.panel img {
+	width: 30%;
+	margin-block-start: 50px;
+}
+
+.width-full {
+	width: 100%;
+}
+
+.mb-50 {
+	margin-block-end: 50px;
 }

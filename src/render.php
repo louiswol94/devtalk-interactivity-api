@@ -8,7 +8,9 @@ $unique_id = wp_unique_id( 'p-' );
 	<?php echo wp_interactivity_data_wp_context( [
 		'sprints' => [
 			'sprint_1' => 0,
+			'sprint_2' => 0,
 		],
+		'storyPoints' => 0,
 	] ); ?>
 >
 	<div class="panel">

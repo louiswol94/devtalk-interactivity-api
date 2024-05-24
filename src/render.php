@@ -16,6 +16,10 @@ $unique_id = wp_unique_id( 'p-' );
 		<div class="form-group">
 			<input type="number" placeholder="Sprint 1" data-wp-on--keyup="actions.sprint_1">
 		</div>
+
+		<div class="form-group">
+			<input type="number" placeholder="Sprint 2" data-wp-on--keyup="actions.sprint_2">
+		</div>
 	</div>
 
 	<div class="panel">

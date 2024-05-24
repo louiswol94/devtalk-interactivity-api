@@ -13,22 +13,7 @@ store( 'sp-calculator', {
 		sprint_1: ( event ) => {
 			const context = getContext();
 			context.sprints.sprint_1 = event.target.value;
-			calculateStoryPoints( context );
-		},
-		sprint_2: ( event ) => {
-			const context = getContext();
-			context.sprints.sprint_2 = event.target.value;
-			calculateStoryPoints( context );
-		},
-		sprint_3: ( event ) => {
-			const context = getContext();
-			context.sprints.sprint_3 = event.target.value;
-			calculateStoryPoints( context );
-		},
-		ratio: ( event ) => {
-			const context = getContext();
-			context.ratio = event.target.value;
-			calculateStoryPoints( context );
+			console.log( context );
 		},
 	}
 } );
